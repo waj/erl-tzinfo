@@ -1,0 +1,4 @@
+-record(context, {rules, zones, in_zone}).
+-record(rule, {from, to, type, in_month, on_day, at_time, save, letter}).
+-record(rule_set, {name, count = 0, offset = 0, rules = []}).
+-record(obs, {utc_offset, rule_set, format, valid_until}).
